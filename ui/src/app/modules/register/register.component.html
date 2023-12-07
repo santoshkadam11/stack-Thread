@@ -1,0 +1,47 @@
+<section>
+  <div class="d-flex flex-column container-ht justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 mx-auto bg-white rounded shadow">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="m-3 text-center">
+                <h1>Welcome</h1>
+              </div>
+              <form class="m-3" (submit)="onSubmit()">
+                <div class="mb-2">
+                  <label class="form-label" for="username">Username</label>
+                  <input class="form-control" type="text" [(ngModel)]="registerForm.username" id="username"
+                         name="username"/>
+                </div>
+                <div class="mb-2">
+                  <label class="form-label" for="password">Password</label>
+                  <input class="form-control" type="password" [(ngModel)]="registerForm.password" id="password"
+                         name="password"/>
+                </div>
+                <div class="mb-2">
+                  <label class="form-label" for="security-question">Security Question</label>
+                  <input class="form-control" type="text" [(ngModel)]="registerForm.securityQuestion"
+                         id="security-question" name="securityQuestion"/>
+                </div>
+                <div class="mb-2">
+                  <label class="form-label" for="security-answer">Security Answer</label>
+                  <input class="form-control" type="text" id="security-answer" [(ngModel)]="registerForm.securityAnswer"
+                         name="securityAnswer"/>
+                </div>
+                <div class="">
+                  <input type="submit" class="form-control btn btn-primary mt-2"/>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img src="/assets/sign_up.svg" alt="sig-up" class="img-fluid p-3"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

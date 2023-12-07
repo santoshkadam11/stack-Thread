@@ -1,0 +1,25 @@
+<header fxLayoutAlign="space-between center">
+
+    <div class="text-primary lead">
+        <a routerLink="/"><h2>Stack
+            <img src="assets/image/stack-of-paper.png">
+            Thread</h2>
+        </a>
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+        <ul fxLayout="row" fxLayoutGap="10px">
+
+            <li><a class="btn btn-primary" *ngIf="isUserLoggedIn" routerLink="/home">HOME</a></li>
+            <li><a class="btn " *ngIf="isUserLoggedIn">
+                <mat-icon>person icon</mat-icon>
+            </a></li>
+            <li><a class="btn" *ngIf="isUserLoggedIn" (click)="logout()">
+                <mat-icon>logout</mat-icon>
+            </a></li>
+            <li><a class="btn btn-success" *ngIf="!isUserLoggedIn" routerLink="/register">Register</a></li>
+            <li><a class="btn btn-secondary" *ngIf="!isUserLoggedIn" routerLink="/login">Login</a></li>
+        </ul>
+    </div>
+</header>
+
+

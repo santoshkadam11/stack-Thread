@@ -1,0 +1,3 @@
+rootProject.name = 'stackThread'
+include 'ui'
+//project(":ui").projectDir = file("../ui")

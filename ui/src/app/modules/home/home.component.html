@@ -1,0 +1,22 @@
+<div fxLayout="column" fxFlex>
+  <div fxLayout="row" fxFlex>
+    <div fxFlex="15">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div fxFlex="85" class="content">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="90">
+          <app-search-post></app-search-post>
+        </div>
+        <div fxFlex="10">
+          <button mat-flat-button color="primary" (click)="openDialog()">Add Post</button>
+        </div>
+      </div>
+      <div class="post-container">
+        <div *ngFor="let post of posts">
+          <app-post [post]="post"></app-post>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container sidebar">
+    <mat-nav-list>
+        <div class="profile-card">
+            <div class="header">
+                <h5></h5>
+            </div>
+            <img src="assets/image/male_profile.svg">
+        </div>
+        <mat-divider/>
+        <h2 matSubheader class="tags-heading  text-center">Tags</h2>
+        <div class="tag-container">
+            <mat-chip-listbox class="tag-list">
+                <mat-chip *ngFor="let tag of tags" highlighted color="accent">
+                  {{tag.tagCount}}
+                    {{tag.tagName}}
+                </mat-chip>
+            </mat-chip-listbox>
+        </div>
+    </mat-nav-list>
+</div>
+

@@ -1,0 +1,18 @@
+<form [formGroup]="searchForm" fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="50" class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search posts..."
+      formControlName="searchQuery"
+    />
+  </div>
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="onSearch()"
+    [disabled]="searchForm.invalid"
+  >
+    Search
+  </button>
+</form>

@@ -1,0 +1,13 @@
+:host{
+  padding: 31px;
+  height: 100px;
+  background: #ffff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+ul li {
+list-style: none;
+}
+a{
+  text-decoration: none;
+}
+

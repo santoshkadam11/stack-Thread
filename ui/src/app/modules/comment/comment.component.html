@@ -1,0 +1,37 @@
+<div style="margin-bottom: 20px; margin-left: 60px; margin-right: 15px ">
+    <div class="comment-container">
+        <div class="comment-section">
+            <div class="comments-wrp">
+                <ng-container *ngFor="let comment of comments">
+                    <div class="comment container">
+                        <div class="c-controls">
+                            <a class="delete"><img src="assets/image/icon-delete.svg" alt="" class="control-icon">Delete</a>
+                            <a class="edit"><img src="assets/image/icon-edit.svg" alt="" class="control-icon">Edit</a>
+                        </div>
+                        <div class="c-user">
+                            <img src="assets/image/male_profile.svg" alt="" class="usr-img">
+                            <p class="usr-name">maxblagun</p>
+                            <p class="cmnt-at">2 weeks ago</p>
+                        </div>
+                        <p class="c-text">
+                            <span class="c-body">{{comment.content}}</span>
+                        </p>
+                    </div>
+                </ng-container>
+            </div><!--commentS wrapper-->
+            <div class="reply-input container">
+                <img src="assets/image/male_profile.svg" alt="" class="usr-img">
+                <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+                <button class="bu-primary">ADD</button>
+            </div> <!--reply input-->
+        </div>
+        <div class="modal-wrp invisible">
+            <div class="modal container">
+                <h3>Delete comment</h3>
+                <p>Are you sure you want to delete this comment? This will remove the comment and cant be undone</p>
+                <button class="yes">YES,DELETE</button>
+                <button class="no">NO,CANCEL</button>
+            </div>
+        </div>
+    </div>
+</div>
